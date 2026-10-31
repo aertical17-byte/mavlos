@@ -27,7 +27,7 @@ It never deletes. It never overwrites. It never moves anything you haven't appro
 > The boring part is automatic (scan, classify, propose).
 > The dangerous part is yours (the final click).
 
-## ✨ Features
+## Features
 
 | | |
 | --- | --- |

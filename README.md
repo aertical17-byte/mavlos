@@ -58,11 +58,15 @@ This is the product's core, not the fine print:
 
 ## 📥 Download
 
-Grab the latest bundle from **[Releases](../../releases)** (`.app`, packed via the build script).
+**[Download the latest release →](../../releases/latest)** — the current asset is `mavlos-1.0.dmg` (built with `hdiutil`, volume "mavlos").
 
 **Requirements:** macOS 13 (Ventura) or later · Apple Silicon.
 
-> **First launch note:** mavlos is signed *ad hoc* by an independent developer, so macOS may say it "cannot be verified". That's normal Gatekeeper behavior for unsigned dev tools. Right-click the app → **Open** → confirm (or System Settings → Privacy & Security → *Open Anyway*). Nothing modifying anything — the prompt is macOS being the bouncer, and mavlos respects it.
+| Asset | Size | macOS build |
+| --- | --- | --- |
+| `mavlos-1.0.dmg` | 3,8 MB | Release **v1.0** · SHA-256 `b7599f15bad661ce486c0588d8b5ed8dc435122fc86360b17bd4ef01578bffd1` |
+
+> **First launch note:** mavlos is signed *ad hoc* by an independent developer, so macOS may say it "cannot be verified" on first launch. That's standard Gatekeeper behavior for unsigned dev tools — right-click the app → **Open** → confirm (or System Settings → Privacy & Security → *Open Anyway*). It's macOS playing bouncer, and mavlos respects it: no shady workarounds, no hidden installs.
 
 ## 🚀 Quick start
 

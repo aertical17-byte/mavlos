@@ -64,7 +64,7 @@ This is the product's core, not the fine print:
 
 | Asset | Size | macOS build |
 | --- | --- | --- |
-| `mavlos-1.0.dmg` | 3,5 MB | Release **v1.0** · SHA-256 `25a846e781695c436563a2edfd2cca4ffe11fa88ce91c753c14e96dc7b014b57` |
+| `mavlos-1.0.dmg` | 3,5 MB | Release **v1.0** · SHA-256 `73245193b8412589e6b108e1a73967238142a61e6011bcf3be0e32ff743b20e3` |
 
 > **First launch note:** mavlos is signed *ad hoc* by an independent developer, so macOS may say it "cannot be verified" on first launch. That's standard Gatekeeper behavior for unsigned dev tools — right-click the app → **Open** → confirm (or System Settings → Privacy & Security → *Open Anyway*). It's macOS playing bouncer, and mavlos respects it: no shady workarounds, no hidden installs.
 

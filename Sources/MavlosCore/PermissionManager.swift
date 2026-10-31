@@ -47,6 +47,17 @@ public enum PermissionManager {
         }
     }
 
+    /// Preflight di scrittura: crea (se manca) la cartella e scrive/elimina
+    /// un file-probe invisibile. È il controllo affidabile della scrivibilità
+    /// reale e ha anche l'effetto di far comparire l'eventuale richiesta di
+    /// permesso TCC mentre l'app è in primo piano.
+    public static func verifyWritable(_ directory: URL) throws {
+        try ensureDirectory(at: directory)
+        let probe = directory.appendingPathComponent(".mavlos-access-probe")
+        try Data().write(to: probe, options: .atomic)
+        try? FileManager.default.removeItem(at: probe)
+    }
+
     /// Spiegazione semplice della richiesta d'accesso (mostrata la prima volta).
     public static func accessExplanation(for url: URL) -> String {
         "Mavlos leggerà nomi, tipologie e dimensioni dei file per proporti dove spostarli. " +

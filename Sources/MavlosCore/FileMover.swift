@@ -186,7 +186,7 @@ public enum FileMover {
     // MARK: - Diagnostica
 
     /// Converte un errore del filesystem in un messaggio comprensibile.
-    static func describe(_ error: Error) -> String {
+    public static func describe(_ error: Error) -> String {
         let nsError = error as NSError
         switch nsError.domain {
         case NSCocoaErrorDomain:

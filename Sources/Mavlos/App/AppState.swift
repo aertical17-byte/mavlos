@@ -530,6 +530,21 @@ final class AppState: ObservableObject {
         showConfirmation = false
         organizationProgress = MoveProgress(completed: 0, total: pending.count, currentFile: nil)
 
+        // Preflight (sul main, dove le richieste TCC si possono mostrare in
+        // primo piano): ogni destinazione unica deve essere creabile e
+        // scrivibile, altrimenti non ha senso partire e fallire tutto.
+        let destinations = Set(pending.compactMap { $0.item.destinationURL?.standardizedFileURL })
+        do {
+            for destination in destinations {
+                try PermissionManager.verifyWritable(destination)
+            }
+        } catch {
+            organizing = false
+            showToast(L.s("Spostamento non avviato") + " · " + error.localizedDescription, isError: true)
+            organizationProgress = MoveProgress(completed: 0, total: 0, currentFile: nil)
+            return
+        }
+
         let journalRef = journal
         let progressRelay = ProgressRelay(owner: self)
         let run = await Task.detached(priority: .userInitiated) {
@@ -550,9 +565,21 @@ final class AppState: ObservableObject {
         proposals = proposals.filter { !movedIDs.contains($0.id) }
         FileOrganizer.rebuildBatchCollisions(&proposals)
 
+        // I motivi delle operazioni fallite restano visibili sulla riga della
+        // proposta: niente errori muti.
+        for result in run.results where result.outcome == .failed {
+            if let index = proposals.firstIndex(where: { $0.id == result.proposalID }) {
+                proposals[index].note = result.message
+            }
+        }
+
         var message = L.formatted("Spostati %d file", run.movedCount)
         if run.failedCount > 0 {
             message += L.formatted(" · %d non riusciti", run.failedCount)
+            if let firstFailure = run.results.first(where: { $0.outcome == .failed }),
+               let reason = firstFailure.message {
+                message += " — " + reason
+            }
         }
         showToast(message, isError: run.movedCount == 0)
     }

@@ -1,0 +1,22 @@
+# Swift Package Manager / build
+.build/
+build/
+DerivedData/
+
+# Pacchetto app e immagini disco generate
+artifacts/
+*.dmg
+*.zip
+
+# Xcode (se mai aprirai il progetto)
+xcuserdata/
+*.xcscmblueprint
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Diagnostica temporanea
+*.log

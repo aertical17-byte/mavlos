@@ -1,0 +1,156 @@
+/* mavlos 1.0 — English translations.
+   Keys are the Italian source strings; the Italian text itself is the coded
+   default (see Sources/Mavlos/L10n.swift), so this table only needs to
+   provide values for the en.lproj build. */
+
+// MARK: Home
+
+"Mavlos scansiona la cartella e propone dove spostare ogni file. Tu confermi." = "Mavlos scans the folder and proposes where each file should go. You confirm.";
+"Metti in ordine" = "Tidy up";
+"i tuoi file." = "your files.";
+"Scansiona" = "Scan";
+"Altra cartella" = "Other folder";
+"Rivedi" = "Review";
+"Scansione pianificata: %d file trovati in %@" = "Scheduled scan: %d files found in %@";
+
+// MARK: Folder selection
+
+"Cosa vuoi scansionare?" = "What do you want to scan?";
+"Puoi sceglierne più d'una." = "You can pick more than one.";
+"Mavlos legge nomi, tipologie e dimensioni dei file per proporti dove spostarli. Nessun dato lascia il tuo Mac." = "Mavlos reads file names, types and sizes to propose where to move them. Nothing leaves your Mac.";
+"Altra cartella…" = "Other folder…";
+"scegli dal Finder" = "choose in Finder";
+"Annulla" = "Cancel";
+"Scansiona 0 cartelle" = "Scan 0 folders";
+"Scansiona %d cartella" = "Scan %d folder";
+"Scansiona %d cartelle" = "Scan %d folders";
+"predefinita" = "default";
+"cartella inesistente" = "missing folder";
+"permessi necessari" = "permission needed";
+"Seleziona almeno una cartella" = "Select at least one folder";
+"Nessuna cartella selezionata" = "No folder selected";
+"Nessuna cartella predefinita disponibile" = "No default folder available";
+"Cartella non accessibile" = "Folder not accessible";
+"Le cartelle scelte non sono accessibili" = "The chosen folders are not accessible";
+"Scegli una cartella nel Finder" = "Choose a folder in Finder";
+"Scegli la cartella da scansionare" = "Choose the folder to scan";
+"Scegli" = "Choose";
+
+// MARK: Scan progress
+
+"Analisi in corso…" = "Analysing…";
+"scansione in corso" = "scanning";
+"file analizzati" = "files scanned";
+"classificati" = "classified";
+"cartella corrente" = "current folder";
+"Annulla scansione" = "Cancel scan";
+"scansione annullata" = "scan cancelled";
+"scansione completata" = "scan completed";
+"Scansione" = "Scan";
+
+// MARK: Results
+
+"%d file trovati" = "%d files found";
+"Nessun file da organizzare" = "Nothing to organize";
+"La scansione è stata annullata prima di leggere alcun file." = "The scan was cancelled before reading any file.";
+"La cartella non contiene file da sistemare." = "This folder holds nothing to tidy up.";
+"Nessun risultato" = "No results";
+"Avvia una scansione per visualizzare i file della cartella." = "Run a scan to see this folder's files.";
+"Nuova scansione" = "New scan";
+"nessun file viene eliminato, solo spostato" = "no file is deleted, only moved";
+"Uno a uno" = "One by one";
+"Organizzazione" = "Organizing";
+"Annulla ultima operazione" = "Undo last operation";
+"Fatto" = "Done";
+"Spostati %d file · Saltati %d · Non riusciti %d" = "Moved %d files · Skipped %d · Failed %d";
+"Spostati %d file" = "Moved %d files";
+" · %d non riusciti" = " · %d failed";
+
+// MARK: Review (batch + single)
+
+"Rivedi le operazioni" = "Review the moves";
+"Tutti" = "All";
+"Cerca file…" = "Search files…";
+"Nessun file nel filtro corrente" = "No files match the current filter";
+"Torna ai risultati" = "Back to results";
+"Escludi selezione" = "Deselect all";
+"Seleziona tutto" = "Select all";
+"%d file · %d selezionati · %d conflitti" = "%d files · %d selected · %d conflicts";
+"Sposta %d file" = "Move %d files";
+"Seleziona i file da spostare" = "Select the files to move";
+"sarà rinominato" = "will be renamed";
+"sarà saltato" = "will be skipped";
+"da verificare" = "to review";
+"già a posto" = "already fine";
+"nessuna destinazione" = "no destination";
+"Azioni sul file" = "File actions";
+"Cambia categoria" = "Change category";
+"Scegli destinazione…" = "Choose destination…";
+"Duplicati" = "Duplicates";
+"Sposta solo questo file" = "Move only this file";
+"Mostra nel Finder" = "Show in Finder";
+"Cartella di destinazione" = "Destination folder";
+"modalità uno a uno — confermi ogni spostamento" = "one-by-one mode — you confirm every move";
+"Operazioni completate" = "All moves completed";
+"Tutti i file nel flusso sono stati trattati." = "Every file in this flow has been handled.";
+"Salta" = "Skip";
+"Sposta questo file" = "Move this file";
+"Nessuna destinazione valida" = "No valid destination";
+"creato %@" = "created %@";
+"File %d di %d rimanenti" = "File %d of %d remaining";
+"Confermi lo spostamento di %d file?" = "Move %d files?";
+"Se un file omonimo esiste già in destinazione, resta intatto: Mavlos rinomina quello in arrivo o salta l'operazione." = "If a file with the same name already exists at the destination, it stays untouched: Mavlos renames the incoming one or skips the move.";
+
+// MARK: Confirmation sheet
+
+// MARK: Categories
+
+"Impostazioni" = "Settings";
+"Scegli come lavora Mavlos." = "Choose how Mavlos works.";
+
+// MARK: Settings
+
+"Cartella predefinita" = "Default folder";
+"Cambia" = "Change";
+"Imposta la cartella predefinita" = "Set the default folder";
+"Includi sottocartelle" = "Include subfolders";
+"scansione ricorsiva" = "recursive scan";
+"Scansione automatica" = "Scheduled scan";
+"prepara i risultati in attesa d'approvazione" = "prepares results in advance, waiting for your approval";
+"Chiedi conferma" = "Ask for confirmation";
+"prima di spostare i file" = "before moving files";
+"Rinomina duplicati" = "Rename duplicates";
+"mantieni entrambi i file" = "keep both files";
+"Notifica a fine scansione" = "Notify when a scan finishes";
+"a ogni scansione completata" = "on every completed scan";
+"Regola attiva" = "Active rule";
+"Regola personalizzata" = "Custom rule";
+"disattiva" = "off";
+"Aggiungi regola" = "Add rule";
+"Modifica regola" = "Edit rule";
+"Nome" = "Name";
+"Categoria" = "Category";
+"Estensioni" = "Extensions";
+"es. pdf, docx, md" = "e.g. pdf, docx, md";
+"Priorità" = "Priority";
+"una priorità più alta viene applicata prima" = "higher priority rules apply first";
+"Cartella di destinazione della regola" = "Rule destination folder";
+"Nuova destinazione della regola" = "New rule destination";
+"Scegli la cartella di destinazione." = "Choose the destination folder.";
+"Salva" = "Save";
+"Elimina" = "Delete";
+"Eliminare la regola?" = "Delete this rule?";
+"La regola personalizzata non sarà più applicata." = "The custom rule will no longer be applied.";
+"Modifica" = "Edit";
+"Cambia destinazione…" = "Change destination…";
+"Nessuna operazione recente." = "No recent operations.";
+"Nessuna operazione da annullare" = "Nothing to undo";
+"Nessuna operazione da rivedere" = "No operations to review";
+"Permessi insufficienti per leggere «%@»" = "Not enough permission to read “%@”";
+"«%@» spostato" = "Moved “%@”";
+"Assegna un nome alla regola." = "Give the rule a name.";
+"Inserisci almeno un'estensione." = "Enter at least one extension.";
+
+// MARK: Misc
+
+"Home" = "Home";
